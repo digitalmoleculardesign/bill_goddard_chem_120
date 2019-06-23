@@ -1,0 +1,139 @@
+\section{References}
+\begin{enumerate}
+\item J. L. Slater, Phys. Rev. {\bf 34}, 1293 (1920).
+\end{enumerate}
+
+\section{Exercises}
+\begin{enumerate}
+\item From Section 4.4. Calculate $S^-\chi_{11}$, $S^-\chi_{10}$,
+$S^-\chi_{11}$, and $S^-\chi_{00}$ for the wavefunctions in
+(\ref{chap4-eqno24}) and (\ref{chap4-eqno25}). Use the results to show
+that the wavefunctions are angular momentum eigenstates.
+
+\item Show that the wavefunction (\ref{chap4-eqno33}) is a spin
+eigenfunction with $S = 1/2(n - m)$.
+\end{enumerate}
+
+
+\subsubsection{Valence Bond Spin Eigenfunctions}
+
+Consider the case in which we want to obtain the spin eigenfunctions 
+for a singlet state for some large systems, with an even number of electrons.  
+It is easy to get one function, namely the $Y1$ function
+\begin{equation}
+\left( \alpha \beta - \beta \alpha \right) \left( \alpha \beta - 
+\beta \alpha \right) \left( \alpha \beta - \beta \alpha \right) 
+\cdots
+\label{chap4app-eqno22}
+\end{equation}
+Applying ${\hat S}^+$ to this function yields zero, and hence, it is
+clearly a singlet function, $S = 0$.  However, for $N > 2$, there are
+other linearly independent spin functions with $S = 0$, as indicated
+in Figure \ref{fig4-02}. These can be obtained as outlined
+earlier. However, these procedures of building up spin functions get
+very time-consuming for large $N$.
+
+An alternate approach is to use functions like (\ref{chap4app-eqno22}) but with the 
+electrons renumbered.  For example, with $N = 4$ we get three such functions
+\begin{eqnarray}
+\chi_{12,34} = \left[ \alpha ( 1 ) \beta ( 2 ) - \beta (1) \alpha (2) 
+\right] \left[ \alpha (3) \beta (4) - \beta (3) \alpha (4) \right] =
+& 1 --- 2\cr
+& 4 --- 3\cr
+%
+\label{chap4app-eqno23}
+\end{eqnarray}
+\begin{eqnarray}
+\chi_{13,24} = \left( \alpha (1) \beta (3) - \beta (1) \alpha (3) 
+\right] \left[ \alpha (2) \beta (4) - \beta (2) \alpha (4) \right] =
+& 1 {~~~~~} 2\cr
+& 4 {~~~~~} 3\cr
+%
+\label{chap4app-eqno24}
+\end{eqnarray}
+and
+\begin{eqnarray}
+\chi_{14,23} = \left[ \alpha (1) \beta (4) - \beta (1) \alpha (4) 
+\right] \left[ \alpha (2) \beta (3) - \beta (2) \alpha (3) \right] = 
+& 1 {~~~~~} 2\cr
+& 4 {~~~~~} 3\cr
+%
+\label{chap4app-eqno25}
+\end{eqnarray}
+These functions are denoted by diagrams in which the electrons are
+spread in sequence around the periphery of a circle and lines are
+drawn connecting singlet paired electrons, as shown in
+(\ref{chap4app-eqno23}), (\ref{chap4app-eqno24}), and
+(\ref{chap4app-eqno25}).  Unfortunately, the functions in this set are
+not linearly independent.  For example,
+\begin{equation}
+\chi_{12,34} + \chi_{14,23} = \chi_{13,24} .
+\end{equation}
+However, Rumer showed that if diagrams with crossed line, as in
+(\ref{chap4app-eqno24}), are eliminated, then the remaining spin
+eigenfunctions are linearly independent.  For example, the valence
+bond (VB), spin eigenfunctions for a six-electron single are
+
+%% RPM something goes here
+
+That is, there are five linearly independent spin functions, just as 
+indicated in Figure \ref{fig4-02}
+
+These spin eigenfunctions are not orthogonal. For example,
+\begin{equation}
+\langle \chi_{12,34} | \chi_{14,23} \rangle = - 1
+\end{equation}
+note that these functions are not normalized.  However, they are easy to 
+use in buiIding up the type of many-electron wavefunctions referred to as 
+valence bond wavefunctions.  For this reason, the spin eigenfunction of type 
+(\ref{chap4app-eqno22}) are referred to as valence bond spin eigenfunctions.
+
+For cases with $S \not= 0$, the valence bond spin eigenfunction are 
+obtained by starting with the single valence bond spin functions for 
+an $N + 2S$ electron system and deleting the last $2S$ electrons, and then, 
+retaining the cases having $2S$ unpaired orbitals.  For example, the valence 
+bond spin functions for $N=3$ and $S= 1/2$ are
+\begin{equation}
+\chi_{12,3} = {1 \atop ~~} ~~~~~ {2 \atop {\cdot 3}} = \left( 
+\alpha \beta - \beta \alpha \right) \alpha
+\end{equation}
+and
+\begin{equation}
+\chi_{23,1} = {{1\cdot} \atop ~~} {~~~~~} {2 \atop 3} = 
+\alpha \left( \alpha \beta - \beta \alpha \right)
+\end{equation}
+obtained from (\ref{chap4app-eqno23}) and (\ref{chap4app-eqno25}),
+respectively.  As another example, to obtain the valence bond spin
+functions for a four-electron triplet, we start with the $S = 0$
+functions for $N = 6$ of (\ref{chap4app-eqno26}), and delete electrons
+five and six.  This leads to three cases with two unpaired electrons
+\begin{equation}
+\chi_{23,1,4} = {{\d 1} \atop {\dot 4}} {~~~~~} {2 \atop 3} = \alpha 
+\alpha \beta \alpha - \alpha \beta \alpha \alpha
+\end{equation}
+\begin{equation}
+\chi_{12,3,4} = {1 \atop {\dot 4}} {~~~~~} {2 \atop {\dot 3}} = \left( 
+\alpha \beta - \beta \alpha \right) \alpha \alpha
+\end{equation}
+\begin{equation}
+\chi_{14,2,3} = {1 \atop 4} {~~~~~} {{\d 2} \atop {\dot 3}} = \alpha \alpha 
+\alpha \beta - \beta \alpha \alpha \alpha .
+\end{equation}
+
+\section{References}
+\begin{enumerate}
+\item A. Young, in Proc. London Math. Soc., vol. 34, page 196 
+(1931).  A particularly lucid description of Young's work is given by 
+D. E. Rutherford, in Substitutional Analysis, Eidenburgh University 
+Press (1948).
+
+\item T. Yamanuchi, in Proc. Phys. Math. Soc. Japan, vol. 18, 
+page 623 (1936).
+
+\item See also M. Kotani, A. Amemiya, E. Ishiguro, and T. Kimur, 
+in Table of Molecular Intervals, Mazurzen Co., Ltd., Tokyo, Chapter 
+1 (1955).
+
+\item From F. W. Bobrowicz, Ph.D. Thesis, California Institute 
+of Technology, pages 93 through 101 (1974).
+\end{enumerate}
